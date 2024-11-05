@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ibwebapi"
+version = "0.1.0"
+description = ""
+authors = ["ww <ww@air.local>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.1"
+loguru = "^0.7.2"
+selenium = "^4.26.1"
+click = "^8.1.7"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+launch-ibgateway = "ibwebapi.ibgateway:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
